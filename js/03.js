@@ -14,8 +14,13 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
+gallery.style.display = "flex";
+gallery.style.gap = "20px";
+gallery.style.marginLeft = "auto";
+gallery.style.marginRight = "auto";
+gallery.style.listStyle = "none";
 
-const item = images.map((image) => {
+const item = images.map(image => {
     return `<li class = "pic">
     <img src = "${image.url}"
     alt = "${image.alt}"
