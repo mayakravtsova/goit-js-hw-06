@@ -16,7 +16,7 @@ function handleSubmit(event) {
    if (email.value !== "" & password.value !== "") {
         console.log(`Login: ${email.value}, Password: ${password.value}`);
     } else {
-        return console.log("Please fill in all the fields!");
+        return alert("Please fill in all the fields!");
    }
     
     event.currentTarget.reset();
